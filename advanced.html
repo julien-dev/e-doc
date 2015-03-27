@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>jQuery.mmenu demo</title>
+        <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="css/demo.css" />
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+        <link type="text/css" rel="stylesheet" href="css/extensions/jquery.mmenu.widescreen.css?v=" media="all and (min-width: 1430px)">
+
+
+
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/layout.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'widescreen', 'theme-white', 'effect-slide', 'pageshadow' ],
+					header		: true,
+					searchfield	: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+						content		: '<a href="mmenu.frebsite.nl">Visit website &rsaquo;</a>'
+					}
+				});
+			});
+		</script>
+	</head>
+    <body>
+    <div id="page">
+        <a id="hamburger" class="Fixed" href="#menu"><span></span></a>
+        <div id="home" class="wrapper no-phone">
+            <div id="home-intro" class="row">
+                <div class="col6">
+                    <h1>mmenu</h1>
+                    <p>The best jQuery plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.</p>
+                    <p>It is very customizable through a wide range of options, extensions and add-ons and it will always fit your needs.</p>
+                    <div id="buttons" class="row">
+                        <a href="download.html" class="col6"><span class="font">Download</span> <span class="sub">the latest version</span></a>
+                        <a href="#home-features" class="col6"><span class="font">Learn more</span> <span class="sub">about the plugin</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-features">
+                <h3>Features</h3>
+                <ul class="row">
+                    <li class="col4">
+                        <h5>Position and z-position</h5>
+                        The menu can be positioned at the top, right, bottom or left, at the back, front or next to the page.</li>
+
+                    <li class="col4">
+                        <h5>Submenus</h5>
+                        Use sliding horizontal submenus or expanding vertical submenus.</li>
+
+                    <li class="col4">
+                        <h5>Touch support</h5>
+                        Optionally reveal the menu by dragging the page out of the viewport.</li>
+
+                    <li class="col4">
+                        <h5>Add-ons</h5>
+                        Add a search field, header, footer, dividers, section indexer, counters, toggles and more.</li>
+
+                    <li class="col4">
+                        <h5>Extensions</h5>
+                        Add effects, change the styling and color scheme, change the size and position and more.</li>
+
+                    <li class="col4">
+                        <h5>Support</h5>
+                        Plays nicely with jQuery Mobile and works well on all major desktop and mobile browsers.</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+		<span class="ad-wrapper mm-fixed-bottom mm-slideout">
+            <!-- mmenu_728x15 -->
+			<div id="google-ads-1"></div>
+                <script type="text/javascript">
+
+                    /* Calculate the width of available ad space */
+                    ad = document.getElementById('google-ads-1');
+
+                    if (ad.getBoundingClientRect().width) {
+                        adWidth = ad.getBoundingClientRect().width; // for modern browsers
+                    } else {
+                        adWidth = ad.offsetWidth; // for old IE
+                    }
+
+                    /* Replace ca-pub-XXX with your AdSense Publisher ID */
+                    google_ad_client = "ca-pub-XXX";
+
+                    /* Replace 1234567890 with the AdSense Ad Slot ID */
+                    google_ad_slot = "1234567890";
+
+                    /* Do not change anything after this line */
+                    if ( adWidth >= 728 )
+                        google_ad_size = ["728", "90"];  /* Leaderboard 728x90 */
+                    else if ( adWidth >= 468 )
+                        google_ad_size = ["468", "60"];  /* Banner (468 x 60) */
+                    else if ( adWidth >= 336 )
+                        google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
+                    else if ( adWidth >= 300 )
+                        google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+                    else if ( adWidth >= 250 )
+                        google_ad_size = ["250", "250"]; /* Square (250 x 250) */
+                    else if ( adWidth >= 200 )
+                        google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
+                    else if ( adWidth >= 180 )
+                        google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
+                    else
+                        google_ad_size = ["125", "125"]; /* Button (125 x 125) */
+
+                    document.write (
+                            '<ins class="adsbygoogle" style="display:inline-block;width:'
+                                    + google_ad_size[0] + 'px;height:'
+                                    + google_ad_size[1] + 'px" data-ad-client="'
+                                    + google_ad_client + '" data-ad-slot="'
+                                    + google_ad_slot + '"></ins>'
+                    );
+
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+
+                </script>
+                <script async src="js/adsbygoogle.js"></script>
+
+
+
+		</span>
+    <nav id="menu">
+        <ul>
+            <li><a href="/"><i class="fa fa-home"></i> &nbsp; Home</a></li>
+            <li><a href="/examples.html"><i class="fa fa-code"></i> &nbsp; Examples</a></li>
+            <li><a href="/playground.html"><i class="fa fa-puzzle-piece"></i> &nbsp; Playground</a></li>
+            <li>
+                <span><i class="fa fa-graduation-cap"></i> &nbsp; Tutorial</span>
+                <div>
+                    <p>This tutorial guides you through the first steps of creating an app look-alike sliding menu for your website and webapp.</p>
+                    <ul>
+                        <li><a href="/tutorial">Getting started</a></li>
+                        <li><a href="/tutorial/setting-up-the-html.html">Setting up the html</a></li>
+                        <li><a href="/tutorial/fire-the-plugin.html">Fire the plugin</a></li>
+                        <li><a href="/tutorial/open-and-close-the-menu.html">Open and close the menu</a></li>
+                        <li><a href="/tutorial/styling-lists.html">Styling lists</a></li>
+                        <li><a href="/tutorial/learn-more.html">Learn more</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span><i class="fa fa-file-text-o"></i> &nbsp; Documentation</span>
+                <ul>
+                    <li>
+                        <span>Options</span>
+                        <ul>
+                            <li><a href="/documentation/options">Options</a></li>
+                            <li><a href="/documentation/options/configuration.html">Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/documentation/api.html">API</a></li>
+                    <li>
+                        <span>Extensions</span>
+                        <div>
+                            <p>With these extensions, you can easily extend the look and feel of your menu.</p>
+                            <ul>
+                                <li><a href="/documentation/extensions">Introduction</a></li>
+                                <li><a href="/documentation/extensions/border-style.html">Border style</a></li>
+                                <li><a href="/documentation/extensions/effects.html">Effects</a></li>
+                                <li><a href="/documentation/extensions/fullscreen.html">Fullscreen</a></li>
+                                <li><a href="/documentation/extensions/iconbar.html">Iconbar</a></li>
+                                <li><a href="/documentation/extensions/multiline.html">Multiline</a></li>
+                                <li><a href="/documentation/extensions/page-shadow.html">Page shadow</a></li>
+                                <li><a href="/documentation/extensions/positioning.html">Positioning</a></li>
+                                <li><a href="/documentation/extensions/themes.html">Themes</a></li>
+                                <li><a href="/documentation/extensions/widescreen.html">Widescreen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Add-ons</span>
+                        <div>
+                            <p>With these add-ons, you can easily add additional behavior to your menu.</p>
+                            <ul>
+                                <li><a href="/documentation/addons">Introduction</a></li>
+                                <li><a href="/documentation/addons/auto-height.html">Auto height</a></li>
+                                <li><a href="/documentation/addons/back-button.html">Back button</a></li>
+                                <li><a href="/documentation/addons/buttonbars.html">Buttonbars</a></li>
+                                <li><a href="/documentation/addons/counters.html">Counters</a></li>
+                                <li><a href="/documentation/addons/dividers.html">Dividers</a></li>
+                                <li><a href="/documentation/addons/drag-open.html">Drag open</a></li>
+                                <li><a href="/documentation/addons/fixed-elements.html">Fixed elements</a></li>
+                                <li><a href="/documentation/addons/footer.html">Footer</a></li>
+                                <li><a href="/documentation/addons/header.html">Header</a></li>
+                                <li><a href="/documentation/addons/off-canvas.html">Off-canvas</a></li>
+                                <li><a href="/documentation/addons/searchfield.html">Searchfield</a></li>
+                                <li><a href="/documentation/addons/section-indexer.html">Section indexer</a></li>
+                                <li><a href="/documentation/addons/toggles.html">Toggles</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Custom CSS</span>
+                        <div>
+                            <p>With the usage of SCSS, you can easily create customized .css files for your menu.</p>
+                            <ul>
+                                <li><a href="/documentation/custom-css">Introduction</a></li>
+                                <li><a href="/documentation/custom-css/override-variables.html">Override variable values</a></li>
+                                <li><a href="/documentation/custom-css/concatenate-files.html">Concatenate .css files</a></li>
+                                <li><a href="/documentation/custom-css/custom-colors.html">Custom colors</a></li>
+                                <li><a href="/documentation/custom-css/custom-sizes.html">Custom sizes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/documentation/changelog.html">Changelog</a></li>
+                </ul>
+            </li>
+            <li><a href="/on-and-off-canvas.html"><i class="fa fa-arrows-h"></i> &nbsp; On- and off-canvas</a></li>
+            <li><a href="/download.html"><i class="fa fa-download"></i> &nbsp; Download &amp; License information</a></li>
+            <li>
+                <span><i class="fa fa-support"></i> &nbsp; Support</span>
+                <ul>
+                    <li><a href="/support/tips-and-tricks.html">Tips and tricks</a></li>
+                    <li><a href="/support/problem-solving.html">Problem solving</a></li>
+                    <li><a href="/support/contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="https://github.com/BeSite/jQuery.mmenu" target="_blank"><i class="fa fa-github"></i> &nbsp; Fork me on GitHub</a></li>
+            <li id="donate">
+                <p>say someting here</p>
+
+            </li>
+        </ul>
+    </nav>
+    </body>
+</html>
