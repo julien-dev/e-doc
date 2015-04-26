@@ -413,18 +413,21 @@ a.btn
     height: 100%;
     background: rgb(0,204,204);
 }
-#page img{
+.mix-img-type-1{
     border: 0;
     width: 25%;
     background: white;
     padding: 2px;
     margin-left: 3%;
 }
-#page img:first-of-type{
+.single-img{
+    width:100%;
+}
+.mix-img-type-1:first-of-type{
     margin-left: 10%;
     -webkit-transform: rotate(-2deg);
 }
-#page img:last-of-type{
+.mix-img-type-1:last-of-type{
     -webkit-transform: rotate(2deg);
 }
 #page div{
