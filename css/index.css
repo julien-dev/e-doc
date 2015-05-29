@@ -24,16 +24,6 @@ background:rgb(169,218,246);
 #enter-btn:hover{
     cursor:pointer;
 }
-.mix-img-type-1{
-    border: 0;
-    width: 25%;
-    background: white;
-    padding: 2px;
-    margin-left: 3%;
-}
-.single-img{
-    width:100%;
-}
 .absoluteCenter{
     background:rgb(169,218,246);
     width:1024px;
