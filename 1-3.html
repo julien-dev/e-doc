@@ -14,7 +14,6 @@
     <link type="text/css" rel="stylesheet" href="css/extensions/jquery.mmenu.widescreen.css?v=" media="all and (min-width: 1430px)">
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
-
     <script type="text/javascript">
         $(function() {
             $('nav#menu').mmenu({
@@ -22,7 +21,9 @@
                     height:"auto"
                 },
                 extensions	: [ 'widescreen', 'theme-white', 'effect-slide', 'pageshadow' ],
+                header		: false,
                 searchfield	: true,
+                footer      : true,
                 counters	: true
 
             });
@@ -30,26 +31,27 @@
     </script>
 </head>
 <body>
-<div id="page">
+<<div id="page">
     <a id="hamburger" class="Fixed" href="#menu"></a>
     <div class="article">
         <div class="article-title">服务消保简报</div>
         <div class="article-content">
-            <div class="img-containner">
+            <div id="inner-pdf">
+                <div class="img-containner">
 
-                <img class="single-img" src="img/2014030000.jpg"/>
-                <img class="single-img" src="img/2014030001.jpg"/>
-                <img class="single-img" src="img/2014030002.jpg"/>
-                <img class="single-img" src="img/2014030003.jpg"/>
-                <img class="single-img" src="img/2014030004.jpg"/>
-                <img class="single-img" src="img/2014030005.jpg"/>
-                <img class="single-img" src="img/2014030006.jpg"/>
-                <img class="single-img" src="img/2014030007.jpg"/>
-                <img class="single-img" src="img/2014030008.jpg"/>
-                <img class="single-img" src="img/2014030009.jpg"/>
-                <img class="single-img" src="img/2014030010.jpg"/>
+                    <img class="single-img" src="img/2014030000.jpg"/>
+                    <img class="single-img" src="img/2014030001.jpg"/>
+                    <img class="single-img" src="img/2014030002.jpg"/>
+                    <img class="single-img" src="img/2014030003.jpg"/>
+                    <img class="single-img" src="img/2014030004.jpg"/>
+                    <img class="single-img" src="img/2014030005.jpg"/>
+                    <img class="single-img" src="img/2014030006.jpg"/>
+                    <img class="single-img" src="img/2014030007.jpg"/>
+                    <img class="single-img" src="img/2014030008.jpg"/>
+                    <img class="single-img" src="img/2014030009.jpg"/>
+                    <img class="single-img" src="img/2014030010.jpg"/>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
