@@ -2,9 +2,7 @@ body{
 margin:0;
 padding:0;
 border:0;
-background:rgb(169,218,246);
 }
-
 .img-containner img{
     width:100%;
     display:block;
@@ -25,7 +23,6 @@ background:rgb(169,218,246);
     cursor:pointer;
 }
 .absoluteCenter{
-    background:rgb(169,218,246);
     width:1024px;
     height:768px;
     left:50%;
@@ -33,3 +30,47 @@ background:rgb(169,218,246);
     position:absolute;
     top:50%;
 }
+.index-nav-bg{
+    background: url("../img/nav-bg.png");
+    width: 100%;
+    height: 100%;;
+}
+.index-nav{
+    width: 100%;
+    height: 70%;
+    margin-top: 12%;
+}
+
+.imgWrap{
+    width:100%;
+    height:33.33%;
+}
+
+.imgWrap li{
+    width: 17%;
+    height: 100%;
+    float: left;
+    margin: 10px 10px 0 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.imgWrap a {
+    display: block;
+    height: 100%;
+    background:url(../img/pixel.gif) repeat center;
+}
+.imgWrap a:hover {
+}
+.imgWrap span {
+    display: inline-block;/*将行内元素改变为行内块元素显示*/
+    width: 1px;/*实现ＩＥ下可读效果*/
+    height: 100%;/*使用元素高度和图片容器高度一样*/
+    vertical-align: middle;/*垂直对齐*/
+}
+
+.imgWrap img {
+    vertical-align: middle;
+}
+
